@@ -1,6 +1,6 @@
 package test.pivotal.pal.tracker;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Map;
 import io.pivotal.pal.tracker.EnvController;

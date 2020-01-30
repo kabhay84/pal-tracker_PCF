@@ -6,8 +6,8 @@ import io.micrometer.core.instrument.MeterRegistry;
 import io.pivotal.pal.tracker.TimeEntry;
 import io.pivotal.pal.tracker.TimeEntryController;
 import io.pivotal.pal.tracker.TimeEntryRepository;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -24,7 +24,7 @@ public class TimeEntryControllerTest {
     private TimeEntryRepository timeEntryRepository;
     private TimeEntryController controller;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         timeEntryRepository = mock(TimeEntryRepository.class);
         MeterRegistry meterRegistry = mock(MeterRegistry.class);
